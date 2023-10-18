@@ -11,12 +11,12 @@ terraform {
 
 # vars needed for execution as profile
 provider "aws" {
-  region  = var.aws_region
+  region  = "us-east-1"
 }
 
 # terraform state bucket
 resource "aws_s3_bucket" "test_bucket" {
-  bucket = var.bucket_name
+  bucket = "tfcloud-test-bucket-20231018T1319"
  
   # prevent accidental deletion of this S3 bucket
   lifecycle {
