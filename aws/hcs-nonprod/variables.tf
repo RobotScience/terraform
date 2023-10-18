@@ -7,4 +7,5 @@ variable "aws_region" {
 variable "bucket_name" {
   type        = string
   description = "The name of the s3 bucket to create"
+  default = "tfcloud-test-bucket-20231018T1319"
 }
