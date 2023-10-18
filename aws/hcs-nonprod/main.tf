@@ -16,7 +16,7 @@ provider "aws" {
 
 # terraform state bucket
 resource "aws_s3_bucket" "test_bucket" {
-  bucket = "tfcloud-test-bucket-20231018T1319"
+  bucket = "tfcloud-test-bucket-20231018t1319"
  
   # prevent accidental deletion of this S3 bucket
   lifecycle {
